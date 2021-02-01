@@ -1,0 +1,73 @@
+.table_wrapper {
+  margin-top: toRems(100);
+  table {
+    margin: 0 auto;
+  }
+}
+.top_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: toRems(46);
+  .search_box_wrapper {
+    input {
+      min-width: toRems(400);
+      min-height: toRems(47);
+      padding: toRems(14) toRems(46);
+      border-radius: toRems(6);
+      border: toRems(1) solid rgba($color: #707070, $alpha: 0.85);
+    }
+    span {
+      display: inline-block;
+      width: toRems(23);
+      height: toRems(23);
+      // background: url(/client/src/assets/Icon-feather-search.svg) no-repeat;
+      // background-position: center;
+    }
+  }
+  .stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .totals {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: toRems(294);
+      height: toRems(47);
+      border-radius: toRems(5);
+      margin-right: toRems(20);
+    }
+    .total_complete {
+      background: $color-complete;
+      color: $color-gray;
+      font-weight: 500;
+    }
+    .total_incomplete {
+      background: $color-incomplete;
+      color: $color-white;
+      font-weight: 500;
+    }
+  }
+}
+
+table,
+th,
+td {
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.16);
+  border-collapse: collapse;
+  text-align: left;
+  padding: toRems(15);
+  border-spacing: toRems(5);
+}
+
+td,
+th {
+  min-width: toRems(200);
+  font-size: toRems(16);
+}
+th {
+  color: $color-gray;
+}

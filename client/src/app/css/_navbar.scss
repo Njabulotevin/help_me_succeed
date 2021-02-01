@@ -1,0 +1,36 @@
+.nav_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  padding: toRems(44) toRems(115);
+  color: $color-white;
+  .menu_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: toRems(183);
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: toRems(72);
+      list-style: none;
+      font-size: toRems(12);
+    }
+    a {
+      background-color: $color-secondary;
+      border-radius: toRems(22);
+      padding: toRems(10) toRems(30);
+      text-decoration: none;
+      color: $color-white;
+      font-size: toRems(12);
+      box-shadow: $box-shadow;
+      &:hover {
+        background-color: $color-white;
+        color: $color-primary;
+      }
+    }
+  }
+}
